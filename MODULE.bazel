@@ -2,3 +2,13 @@ module(
     name = "bazel-module-chilld-main",
     version = "0.0.1",
 )
+
+bazel_dep(
+    name = "libhellojp",
+    version = "0.0.1"
+)
+
+local_path_override(
+    module_name = "libhellojp",
+    path = "./libhellojp",
+)
