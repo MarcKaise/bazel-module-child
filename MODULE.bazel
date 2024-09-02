@@ -12,3 +12,13 @@ local_path_override(
     module_name = "libhellojp",
     path = "./libhellojp",
 )
+
+bazel_dep(
+    name = "libhelloen",
+    version = "0.0.1",
+)
+
+local_path_override(
+    module_name = "libhelloen",
+    path = "./libhelloen",
+)
